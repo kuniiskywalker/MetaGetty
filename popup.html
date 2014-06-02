@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MetaGetty</title>
+<!-- Bootstrap -->
+<link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-fluid" style="padding-top: 15px; padding-bottom: 15px; background: #EEE; width: 800px;">
+
+<button class="btn btn-default pull-right get-url"><i class="glyphicon glyphicon-save"></i>Get URL</button>
+<!-- tab -->
+<ul class="nav nav-tabs">
+<li class="active"><a class="view-url" href="#url" data-toggle="tab"><i class="glyphicon glyphicon-link"></i>URL</a></li>
+<li><a class="view-settings" href="#setting" data-toggle="tab"><i class="glyphicon glyphicon-cog"></i>Setting</a></li>
+</ul>
+
+<div class="tab-content" style="padding: 10px;  border: #DDD 1px solid; border-width: 0 1px 1px; margin-bottom: 20px; background: #FFF;">
+<div class="tab-pane active" id="url">
+<textarea class="input-sm" name="urls" value="Smith" rows="6" placeholder="http://cueplus.com/" style="width:100%;">
+</textarea>
+<div style="text-align: right;">
+<button class="btn btn-primary get-new" style="text-align: center;"><i class="glyphicon glyphicon-heart"></i>Let's Getty!!</button>
+</div>
+</div>
+<div class="tab-pane" id="setting">
+<div class="row">
+<div class="col-xs-5">
+<div class="checkbox">
+<label><input type="checkbox" name="settings[]" value="1">URL</label><br>
+<label><input type="checkbox" name="settings[]" value="2">Title</label><br>
+<label><input type="checkbox" name="settings[]" value="3">Discription</label><br>
+<label><input type="checkbox" name="settings[]" value="4">Keyword</label>
+</div>
+</div>
+<div class="col-xs-5">
+<div class="checkbox">
+<label><input type="checkbox" name="settings[]" value="5">og:title</label><br>
+<label><input type="checkbox" name="settings[]" value="6">og:type</label><br>
+<label><input type="checkbox" name="settings[]" value="7">og:discription</label><br>
+<label><input type="checkbox" name="settings[]" value="8">og:image</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- tab -->
+<ul class="nav nav-tabs">
+<li class="active"><a href="#preview" data-toggle="tab" class="view-preview"><i class="glyphicon glyphicon-eye-open"></i>Preview</a></li>
+<li><a href="#code" data-toggle="tab" class="view-code"><i class="glyphicon glyphicon-wrench"></i>Code</a></li>
+</ul>
+<div class="tab-content" style="padding: 10px;  border: #DDD 1px solid; border-width: 0 1px 1px; margin-bottom: 30px; background: #FFF;">
+<div class="tab-pane active" id="preview">
+<table class="table table-striped table-bordered table-hover table-condensed data-list" style="margin-bottom: 5px;">
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div style="text-align: right;">
+<button class="btn btn-primary copy" style="text-align: center;"><i class="glyphicon glyphicon-share"></i>Copy to Clipboard</button>
+</div>
+</div>
+<div class="tab-pane" id="code">
+<textarea class="input-sm" name="code" value="Smith" rows="6" style="width:100%;"></textarea>
+<div style="text-align: right;">
+<button class="btn btn-primary copy" style="text-align: center;"><i class="glyphicon glyphicon-share"></i>Copy to Clipboard</button>
+</div>
+</div>
+</div>
+
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="myscript.js"></script>
+</body>
+</html>

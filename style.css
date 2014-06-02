@@ -1,0 +1,6 @@
+table#list {
+    border: 1px solid #000000;
+}
+table#list tr, table#list th, table#list td {
+    border: 1px solid #000000;
+}

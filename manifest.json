@@ -1,0 +1,35 @@
+{
+	"name": "Meta Getty",
+    "manifest_version": 2,
+    "version": "1.0",
+
+    "description": "テストデータとして二回以降も使えるようにするツール",
+
+    "permissions": [
+        "notifications",
+        "<all_urls>",
+        "tabs",
+        "http://*/*", 
+        "https://*/*"
+    ],
+
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }],
+    
+    "background": {  
+      "scripts": ["background.js"]
+    },  
+    
+    "icons": {
+        "19": "icon19.png"
+    },
+    
+    "browser_action": {
+         "default_icon": "icon19.png",
+         "default_title": "Meta Getty",
+         "default_popup": "popup.html" 
+    }
+}
