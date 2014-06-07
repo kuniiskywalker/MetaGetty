@@ -31,15 +31,16 @@ CSS information
   padding-top: 15px;
   padding-bottom: 15px;
   background: #EEE;
+  width: 650px;
 }
 
-/* line 13, ../_scss/_bootstrap.scss */
+/* line 14, ../_scss/_bootstrap.scss */
 .tab-content {
   background: #FFF;
   padding: 10px;
   border: #DDD 1px solid;
   border-width: 0 1px 1px;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 /* 追加 style

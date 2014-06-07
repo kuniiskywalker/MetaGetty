@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+// YUI用フォントサイズ
+$yui-10px: 77%;
+$yui-11px: 85%;
+$yui-12px: 93%;
+$yui-13px: 100%;
+$yui-14px: 108%;
+$yui-15px: 116%;
+$yui-16px: 123.1%;
+$yui-17px: 131%;
+$yui-18px: 138.5%;
+$yui-19px: 146.5%;
+$yui-20px: 153.9%;
+$yui-21px: 161.6%;
+$yui-22px: 167%;
+$yui-23px: 174%;
+$yui-24px: 182%;
+$yui-25px: 189%;
+$yui-26px: 197%;
+
+//fontの設定
+//$fontlist: $fontMincho;
+$fontMincho: "ヒラギノ明朝 Pro W3", 'Hiragino Mincho ProN', "Hiragino Mincho Pro", "HGS明朝B","メイリオ","Meiryo","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", serif;
+$fontlist: "メイリオ","Meiryo","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+$telFontList: 'Federo', sans-serif;
+$enFontList: 'Fanwood Text', serif;
+$defaultColor: #332822;
+
+$mainColor: #EE6D6D;
+$subColor: #FBA740;
+$subColor02: #6BB0C7;
+$subColor03: #98BF5F;
+$linkColor: #666666;
+$visitedColor:#5A9AB5;
+$hoverColor: #B38309;
+$alertColor:#DB587E;
+
+// @mixin spriteImg($numImg) {
+// 	text-indent:100%;
+// 	overflow: hidden;
+// 	white-space:nowrap;
+// 	background-image: $share-url;
+// 	background-repeat: no-repeat;
+// 	width: image-width(sprite-file($share,$numImg));
+// 	height: image-height(sprite-file($share,$numImg));
+// 	background-position: sprite-position($share,$numImg);
+// }
+// // @include spriteImg("");
+
+// // スプライト　リンク背景画像指定
+// @mixin spriteLinkImg($numImg) {
+// 	display:block;
+// 	text-indent:100%;
+// 	overflow: hidden;
+// 	white-space:nowrap;
+// 	background-image: $share-url;
+// 	background-repeat: no-repeat;
+// 	width: image-width(sprite-file($share,$numImg));
+// 	height: image-height(sprite-file($share,$numImg));
+// 	background-position: sprite-position($share,$numImg);
+// }
+// @include spriteLinkImg("btn_order_db02");
+// &:hover{
+// 	background-position: sprite-position($share,"btn_order_db02_o");
+// }
+
+@mixin inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+}
+
+@mixin reset-property {
+		margin:0;
+		padding:0;
+		border: 0;
+		font-size:$yui-13px;
+		color:$defaultColor;
+		background:none;
+		text-indent:0;
+		text-shadow:none;
+		line-height:1.5;
+		overflow:visible;
+		white-space:normal;
+}
+
+@mixin text-sprite-property {
+	white-space:nowrap;
+	overflow:hidden;
+	text-indent:100%;
+	br {
+		display:none;
+	}
+}
+@mixin justify {
+	text-align:justify;
+	text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph;
+}
+
+@mixin clearfix {
+	*zoom:1;
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+.clearfix {
+	*zoom:1;
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+@function half($size) {
+	@return #{$size/2}px;
+}

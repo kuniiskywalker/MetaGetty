@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "compass";
+/* ===================================================================
+CSS information
+ file name  :style.css
+ style info :各cssファイル読み込み用
+=================================================================== */
+// サポートするブラウザ（true：サポートする false：サポートしない）
+// Compass ブラウザサポート
+// IE6に対応するか
+$legacy-support-for-ie6 : true;
+// IE7に対応するか
+$legacy-support-for-ie7 : true;
+// Webkit, Safari
+$experimental-support-for-webkit: true;
+// Firefox
+$experimental-support-for-mozilla: true;
+// Opera
+$experimental-support-for-opera: false;
+// Internet Explorer
+$experimental-support-for-microsoft: true;
+// Konqueror
+$experimental-support-for-khtml: false;
+// IE9のグラデーションをSVGで置き換える
+$experimental-support-for-svg: false;
+
+@import "vars";
+/* CSS Sprite用設定 */
+// @import "sprite/*.png";
+// $share: sprite-map("sprite/*.png", $spacing:10px);
+// $share-url: sprite-url($share);
+
+/* bootstrap カスタマイズ用style
+----------------------------------------------------------- */
+@import "bootstrap";
+
+/* 追加 style
+----------------------------------------------------------- */
+@import "parts";
