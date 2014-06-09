@@ -1,9 +1,9 @@
 {
 	"name": "Meta Getty",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.1",
 
-    "description": "テストデータとして二回以降も使えるようにするツール",
+    "description": "ページリストが一瞬で完成！meta情報を一覧で表示、エクセル等に貼り付ければ瞬時にページリストを作成できます。",
 
     "permissions": [
         "notifications",
@@ -24,7 +24,7 @@
     },  
     
     "icons": {
-        "19": "icon19.png"
+        "48": "icon48.png"
     },
     
     "browser_action": {
